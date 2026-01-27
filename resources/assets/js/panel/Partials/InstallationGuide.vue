@@ -71,8 +71,8 @@
                                 Now all that is left to do is to add the 2 enviroment variables to your .env file:
                             </p>
                             <pre>
-LB_KEY=18fRdiPBtVKqP76JLmgLIeuzv
-LB_PROJECT_KEY=hN4Ui90S4CzaRqsADo0lZLA2WuDiG9MgTwebHTuLtjo32EWzvf
+LB_KEY=
+LB_PROJECT_KEY=
               </pre>
                             <p>Now test to see if it works, you can do this in two ways.</p>
                             <h3>Option 1</h3>
