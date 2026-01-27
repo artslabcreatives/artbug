@@ -177,7 +177,7 @@ import Card from '@/Components/Card'
 import Button from '@/Components/Button'
 import FormInputGroup from '@/Components/FormInputGroup'
 import FormTextareaGroup from '@/Components/FormTextareaGroup'
-import { useForm } from '@inertiajs/inertia-vue3'
+import { useForm } from '@inertiajs/vue3'
 
 export default {
     layout: AppLayout,

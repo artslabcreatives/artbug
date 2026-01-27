@@ -1,4 +1,5 @@
-import Prism from '../plugins/prism';
+import '../plugins/prism';
+const Prism = window.Prism ?? globalThis.Prism;
 import anime from 'animejs/lib/anime.es.js';
 
 (function() {

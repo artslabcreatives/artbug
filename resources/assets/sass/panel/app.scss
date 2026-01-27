@@ -1,3 +1,7 @@
+@use '../plugins/prism_theme';
+
+@config "../../../../tailwind.panel.js";
+
 /* Reset */
 @tailwind base;
 
@@ -5,9 +9,7 @@
 
 /* Utilities */
 @tailwind utilities;
-
-@import '../plugins/prism_theme';
-@import "~vue-toastification/dist/index.css";
+@import "vue-toastification/dist/index.css";
 
 pre:not([class*='language-']){
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;

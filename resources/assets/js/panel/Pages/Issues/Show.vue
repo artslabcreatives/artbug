@@ -157,8 +157,8 @@ import ButtonRackItem from '@/Components/ButtonRackItem'
 import Code from '@/Components/Code'
 import Paginator from '@/Components/Paginator'
 import EditProject from '@/Partials/EditProject'
-import Dropdown from "../../Components/Dropdown";
-import DropdownOption from "../../Components/DropdownOption";
+import Dropdown from '@/Components/Dropdown';
+import DropdownOption from '@/Components/DropdownOption';
 
 export default {
   layout: AppLayout,

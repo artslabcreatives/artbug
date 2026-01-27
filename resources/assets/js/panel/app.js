@@ -1,9 +1,9 @@
 import {createApp, h} from 'vue'
-import { createInertiaApp, Head, Link } from '@inertiajs/inertia-vue3'
-import {InertiaProgress} from '@inertiajs/progress'
+import { createInertiaApp, Head, Link } from '@inertiajs/vue3'
+import { setupProgress } from '@inertiajs/core'
 import Toast from "vue-toastification";
 
-InertiaProgress.init({
+setupProgress({
     delay: 250,
     color: '#5D87E6',
     includeCSS: true,
@@ -12,7 +12,10 @@ InertiaProgress.init({
 
 createInertiaApp({
     title: title => title ? `${title} - LaraBug` : 'LaraBug',
-    resolve: (name) => import(`./Pages/${name}`),
+    resolve: (name) => {
+        const pages = import.meta.glob('./Pages/**/*.vue')
+        return pages[`./Pages/${name}.vue`]()
+    },
     setup({ el, app, props, plugin }) {
         createApp({ render: () => h(app, props) })
             .use(Toast, {

@@ -263,9 +263,10 @@ import Button from '@/Components/Button'
 import ButtonRack from '@/Components/ButtonRack'
 import ButtonRackItem from '@/Components/ButtonRackItem'
 import Code from '@/Components/Code'
-import Prism from '../../../plugins/prism';
-import Dropdown from "../../Components/Dropdown";
-import DropdownOption from "../../Components/DropdownOption";
+import '../../../plugins/prism';
+const Prism = window.Prism ?? globalThis.Prism;
+import Dropdown from '@/Components/Dropdown';
+import DropdownOption from '@/Components/DropdownOption';
 
 export default {
 

@@ -138,7 +138,7 @@ import FormInputGroup from '@/Components/FormInputGroup'
 import FormTextareaGroup from '@/Components/FormTextareaGroup'
 import Checkbox from '@/Components/Checkbox'
 import { useToast } from "vue-toastification";
-import { useForm } from '@inertiajs/inertia-vue3'
+import { useForm } from '@inertiajs/vue3'
 
 export default {
     layout: AppLayout,

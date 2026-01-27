@@ -1,3 +1,12 @@
+@use '../plugins/prism_theme';
+@use '../plugins/fontawesome/fontawesome';
+@use '../plugins/fontawesome/duotone';
+@use '../plugins/fontawesome/brands';
+@use '../plugins/fontawesome/solid';
+@use '../plugins/fontawesome/regular';
+
+@config "../../../../tailwind.config.js";
+
 @import "https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap";
 
 @tailwind base;
@@ -5,14 +14,6 @@
 @tailwind components;
 
 @tailwind utilities;
-
-@import '../plugins/prism_theme';
-
-@import '../plugins/fontawesome/fontawesome';
-@import '../plugins/fontawesome/duotone';
-@import '../plugins/fontawesome/brands';
-@import '../plugins/fontawesome/solid';
-@import '../plugins/fontawesome/regular';
 
 
 .markdown {

@@ -76,7 +76,7 @@ import Button from '@/Components/Button'
 import Paginator from '@/Components/Paginator'
 import pickBy from 'lodash/pickBy'
 import throttle from 'lodash/throttle'
-import Badge from "../../Components/Badge";
+import Badge from '@/Components/Badge';
 
 export default {
   layout: AppLayout,

@@ -6,7 +6,7 @@
 
     <title>@yield('title', 'Laravel Error Tool') - {{ config('app.name') }}</title>
 
-    <link rel="stylesheet" type="text/css" href="{{ mix('css/frontend.css') }}">
+    @vite(['resources/assets/sass/frontend/app.scss', 'resources/assets/js/frontend/frontend.js'])
 
     @include('frontend.partials.meta')
 
@@ -48,7 +48,7 @@
 @include('frontend.partials.footer')
 @endif
 
-<script src="{{ mix('js/frontend.js') }}"></script>
+
 
 @include('cookie-consent::index')
 
