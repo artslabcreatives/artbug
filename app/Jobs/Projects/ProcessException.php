@@ -76,15 +76,11 @@ class ProcessException implements ShouldQueue
                 $this->project->total_exceptions++;
                 $this->project->save();
             }
-        } catch (\Exception $exception) {
-            // TODO: handle exception
+        } catch (\Throwable $exception) {
+            // Report unexpected failures so they are visible in logs/monitoring.
+            report($exception);
         }
 
-        if ($this->project->exceptions()->count(['id']) > 3000) {
-            $this->project->exceptions()
-                ->orderBy('created_at')
-                ->limit(1000)
-                ->delete();
-        }
+        // Removed hard cap/rotation of exceptions to avoid dropping historical data.
     }
 }

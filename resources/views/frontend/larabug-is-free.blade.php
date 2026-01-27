@@ -79,10 +79,7 @@
                                     Are there limitations?
                                 </dt>
                                 <dd class="text-base leading-6 text-gray-500">
-                                    We rotate data to keep our services clean and fast, we rotate any exception data
-                                    older than 30 days.
-                                    You are also limited to 30 exceptions per minute before rate limiting takes in
-                                    place.
+                                    There are no hard limits on exception volume or retention.
                                 </dd>
                             </div>
                         </dl>

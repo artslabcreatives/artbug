@@ -65,7 +65,6 @@ class ApiController extends Controller
 
     public function feedback(FeedbackRequest $request)
     {
-        // TODO: Fix validation
         $exception = Exception::findOrFail($request->get('id'));
         $exception->feedback()->create(
             $request->only([
