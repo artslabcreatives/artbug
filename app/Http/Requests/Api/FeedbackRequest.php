@@ -24,9 +24,26 @@ class FeedbackRequest extends FormRequest
     public function rules()
     {
         return [
+            'id' => [
+                'required',
+                'uuid',
+                'exists:exceptions,id',
+            ],
             'name' => [
-                'required'
-            ]
+                'required',
+                'string',
+                'max:255',
+            ],
+            'email' => [
+                'required',
+                'email',
+                'max:255',
+            ],
+            'feedback' => [
+                'required',
+                'string',
+                'max:5000',
+            ],
         ];
     }
 }

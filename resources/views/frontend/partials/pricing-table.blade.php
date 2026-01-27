@@ -14,19 +14,19 @@
             <ul class="mt-8">
                 <li class="mt-1">
                     <i class="fad fa-check text-green-400 mr-1"></i>
-                    Up to 2 projects
+                    Unlimited projects
                 </li>
                 <li class="mt-1">
                     <i class="fad fa-check text-green-400 mr-1"></i>
-                    Up to 50 emails per day
+                    Unlimited emails per day
                 </li>
                 <li class="mt-1">
                     <i class="fad fa-check text-green-400 mr-1"></i>
-                    Up to 10 exceptions per minute
+                    Unlimited exceptions
                 </li>
                 <li class="mt-1">
                     <i class="fad fa-check text-green-400 mr-1"></i>
-                    7 days exception retention
+                    Unlimited exception retention
                 </li>
             </ul>
         </div>
@@ -54,11 +54,11 @@
                 </li>
                 <li class="mt-1">
                     <i class="fad fa-check text-green-400 mr-1"></i>
-                    Up to 30 exceptions per minute
+                    Unlimited exceptions
                 </li>
                 <li class="mt-1">
                     <i class="fad fa-check text-green-400 mr-1"></i>
-                    100 days exception retention
+                    Unlimited exception retention
                 </li>
                 <li class="mt-1">
                     <i class="fad fa-check text-green-400 mr-1"></i>
